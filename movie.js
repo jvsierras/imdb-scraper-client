@@ -1,6 +1,6 @@
 const main = document.querySelector('main');
 const imdbID = window.location.search.match(/imdbID=(.*)/)[1];
-const BASE_URL = 'https://imdb-scrpr.now.sh/';
+const BASE_URL = 'https://www.imdb.com/title/';
 
 function getMovie(imdbID) {
   return fetch(`${BASE_URL}movie/${imdbID}`)
